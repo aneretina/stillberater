@@ -57,6 +57,11 @@ textarea {
   resize: none;
 }
 
+h1 {
+  font-family: $ff-lora;
+  color: gray;
+}
+
 // chrome autofill background removal
 // если на проекте у инпутов используются разные цвета фонов\текста -
 // удалите это из глобала и используйте локально с нужными цветами
@@ -89,6 +94,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
@@ -126,12 +132,12 @@ input[type="time"] {
 select,
 textarea,
 input:matches([type="email"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"]) {
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"]) {
   appearance: none;
 }
 
@@ -140,4 +146,12 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+button {
+  padding: 1em 2.5em 1em 2.5em;
+  border: none;
+  background: #fff;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
 }

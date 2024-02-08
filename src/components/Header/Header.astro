@@ -1,12 +1,50 @@
 ---
 import { Icon } from 'astro-icon/components'
 import Container from '@components/Container/Container'
+import Title from '@ui/Title/Title';
+
+interface NavItem {
+	title: string;
+	href: string;
+}
+
+const navItems: NavItem[] = [
+  {
+  title: "Welcome",
+  href: ''
+  },
+  {
+  title: "Leistungen",
+  href: ''
+  },
+  {
+  title: "About",
+  href: ''
+  },
+  {
+  title: "Kontakt",
+  href: ''
+  },
+
+]
+
+
 ---
 
 <header class="header">
   <Container>
-    <div class="header__logo">
-      <Icon name="logo" />
+    <div class="header__wrapper">
+      <h1>Esther Isselbächer</h1>
+        <nav class="header__menu">
+         {navItems.map(({title, href}) => (
+            <ul>
+            <li>
+              <a {href}>{title}</a></li>
+          </ul>
+
+          ))}
+
+        </nav>
     </div>
   </Container>
 </header>

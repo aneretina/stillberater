@@ -1,0 +1,18 @@
+.banner {
+    background:  linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);;
+    position: relative;
+
+    &__bg {
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    &__info {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 40%;
+        max-width: 500px;
+    }
+}

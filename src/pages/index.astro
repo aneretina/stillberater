@@ -1,19 +1,24 @@
 ---
+import Banner from '@components/Banner/Banner'
 import Container from '@components/Container/Container'
 import Modal from '@components/Modal/Modal'
-import myImage from '@images/mountain.jpg'
+import myImage from '@images/rosa-background.jpg'
 import MainLayout from '@layouts/Main/Main'
 import { Picture } from 'astro:assets'
 ---
 
 <MainLayout title="Главная">
-  <Container>
+    <Banner>
+      <Container>
+      </Container>
+    </Banner>
     <!--
       Миксин генерирует все изображения из изначальной картинки (х1, х2, webp, avif)
       нужно только изначально прокинуть картинку х2
 
       п.с. удалите коммент при подготовке проекта
     -->
+  <!--
     <Picture
       src={myImage}
       alt="Example image."
@@ -24,7 +29,7 @@ import { Picture } from 'astro:assets'
       densities={[2]}
     />
     <p>hello</p>
-  </Container>
+   -->
 
   <Fragment slot="modals">
     <Modal name="example">
