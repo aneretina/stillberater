@@ -1,14 +1,14 @@
 ---
+import { fade } from "astro:transitions";
 import rosaBackground from "../../images/breastfeeding1.png"
 import { getImage } from "astro:assets";
-
 const optimizedBackground = await getImage({src: rosaBackground, format: 'webp'})
 ---
 
 <div class="banner">
     <div class="banner__wrapper">
         <div class="banner__bg" style={`background-image: url(${optimizedBackground.src});`} ></div>
-        <div class="banner__info">
+        <div class="banner__info" transition:animate={fade()}>
             <h2>Hi, I'm Esther Isselbächer</h2>
             <p>I'm specialized in women's mental health, here to help you understand and prioritize yourself.</p>
             <button>More about me</button>
