@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "astro": "^4.1.1",
-    "astro-navbar": "^1.1.2",
+    "astro-navbar": "^1.2.3",
     "scroll-lock": "2.1.5",
     "swiper": "9.4.1"
   },

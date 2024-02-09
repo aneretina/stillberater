@@ -1,21 +1,16 @@
 ---
-interface NavItem {
-	title: string;
-	href: string;
-}
-
-const navItems = [];
+const {navItems} = Astro.props;
 
 
 ---
 
-<nav class="header__menu-desktop hidden-tablet-only hidden-mobile-only">
-    
-    {navItems.map(({title, href}) => (
+<nav class="hidden-tablet-only hidden-mobile-only menu-desktop">
        <ul>
+        {navItems.map(({title, href}) => (
        <li>
          <a {href}>{title}</a></li>
+         ))}
      </ul>
-     ))}
+
      
    </nav>

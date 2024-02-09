@@ -36,8 +36,8 @@ const navItems: NavItem[] = [
   <Container>
     <div class="header__wrapper">
       <h1>Esther Isselbächer</h1>
-       <NavBar navItems></NavBar>
-       <NavBarMobile></NavBarMobile>
+       <NavBar navItems={navItems}></NavBar>
+       <NavBarMobile navItems={navItems}></NavBarMobile>
     </div>
   </Container>
 </header>
