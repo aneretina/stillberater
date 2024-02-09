@@ -11,12 +11,13 @@
     justify-content: space-between;
   }
 
-  &__menu {
+  &__menu-desktop {
     display: flex;
     align-items: center;
+  
   }
 
-  &__menu ul {
+  &__menu-desktop ul {
     list-style: none;
   }
 

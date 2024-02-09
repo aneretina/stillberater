@@ -1,0 +1,19 @@
+---
+interface NavItem {
+	title: string;
+	href: string;
+}
+
+const props = {
+    navItems: NavItem[]
+}
+---
+
+<nav class="header__menu-desktop hidden-tablet-only hidden-mobile-only">
+    {navItems.map(({title, href}) => (
+       <ul>
+       <li>
+         <a {href}>{title}</a></li>
+     </ul>
+     ))}
+   </nav>

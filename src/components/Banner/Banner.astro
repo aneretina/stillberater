@@ -6,10 +6,13 @@ const optimizedBackground = await getImage({src: rosaBackground, format: 'webp'}
 ---
 
 <div class="banner">
-    <div class="banner__bg" style={`background-image: url(${optimizedBackground.src});`} ></div>
-    <div class="banner__info">
-        <h2>Hi, I'm Deborah Jameson</h2>
-        <p>I'm specialized in women's mental health, here to help you understand and prioritize yourself.</p>
-        <button>More about me</button>
+    <div class="banner__wrapper">
+        <div class="banner__bg" style={`background-image: url(${optimizedBackground.src});`} ></div>
+        <div class="banner__info">
+            <h2>Hi, I'm Deborah Jameson</h2>
+            <p>I'm specialized in women's mental health, here to help you understand and prioritize yourself.</p>
+            <button>More about me</button>
+        </div>
     </div>
+    
 </div>

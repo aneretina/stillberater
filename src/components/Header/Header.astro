@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
 import Container from '@components/Container/Container'
+import NavBar from '@components/NavBar/NavBar'
+import NavBarMobile from '@components/NavBarMobile/NavBarMobile'
 import Title from '@ui/Title/Title';
 
 interface NavItem {
@@ -28,23 +30,14 @@ const navItems: NavItem[] = [
 
 ]
 
-
 ---
 
 <header class="header">
   <Container>
     <div class="header__wrapper">
       <h1>Esther Isselbächer</h1>
-        <nav class="header__menu">
-         {navItems.map(({title, href}) => (
-            <ul>
-            <li>
-              <a {href}>{title}</a></li>
-          </ul>
-
-          ))}
-
-        </nav>
+       <NavBar navItems></NavBar>
+       <NavBarMobile></NavBarMobile>
     </div>
   </Container>
 </header>
