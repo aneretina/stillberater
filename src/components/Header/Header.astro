@@ -1,9 +1,8 @@
 ---
-import { Icon } from 'astro-icon/components'
 import Container from '@components/Container/Container'
 import NavBar from '@components/NavBar/NavBar'
 import NavBarMobile from '@components/NavBarMobile/NavBarMobile'
-import Title from '@ui/Title/Title';
+
 
 interface NavItem {
 	title: string;
@@ -35,7 +34,7 @@ const navItems: NavItem[] = [
 <header class="header">
   <Container>
     <div class="header__wrapper">
-      <h1>Esther Isselbächer</h1>
+      <!-- <h1>Esther Isselbächer</h1> -->
        <NavBar navItems={navItems}></NavBar>
        <NavBarMobile navItems={navItems}></NavBarMobile>
     </div>

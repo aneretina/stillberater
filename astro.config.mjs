@@ -1,6 +1,6 @@
-import { defineConfig, squooshImageService } from 'astro/config'
-import viteSassGlob from 'vite-plugin-sass-glob-import'
-import icon from 'astro-icon'
+import { defineConfig, squooshImageService } from 'astro/config';
+import viteSassGlob from 'vite-plugin-sass-glob-import';
+import icon from 'astro-icon';
 
 // const outputPluginStats = () => ({
 //   name: 'output-plugin-stats',
@@ -21,48 +21,49 @@ import icon from 'astro-icon'
 //   })
 // } // должен убирать type="module" из тега скрипт
 
+import tailwind from "@astrojs/tailwind";
+
 // https://astro.build/config
 export default defineConfig({
-  devToolbar: { enabled: false },
+  devToolbar: {
+    enabled: false
+  },
   site: 'https://htmlonelove.github.io',
   compressHTML: false,
   output: 'static',
   publicDir: './public',
   build: {
-    format: 'file', // вытаскивает вложенные страницы в корень src/pages/subpage/subpage.html => dist/subpage.html
-    assets: 'assets', // собирает скрипты и стили в папку dist/assets
-    assetsPrefix: '.', // добавляет `.` в пути скриптов и стилей
+    format: 'file',
+    // вытаскивает вложенные страницы в корень src/pages/subpage/subpage.html => dist/subpage.html
+    assets: 'assets',
+    // собирает скрипты и стили в папку dist/assets
+    assetsPrefix: '.' // добавляет `.` в пути скриптов и стилей
     // inlineStylesheets: 'never', // запрещает инлайн стилей
   },
   image: {
-    service: squooshImageService(),
+    service: squooshImageService()
   },
-  integrations: [
-    icon({
-      svgoOptions: {
-        plugins: [
-          'preset-default'
-        ],
-      },
-    })
-  ],
+  integrations: [icon({
+    svgoOptions: {
+      plugins: ['preset-default']
+    }
+  }), tailwind()],
   vite: {
     build: {
-      assetsInlineLimit: 0, // запрещает инлайн скриптов. по дефолту инлайнит скрипты в html
-      cssCodeSplit: false, // css в один файл
+      assetsInlineLimit: 0,
+      // запрещает инлайн скриптов. по дефолту инлайнит скрипты в html
+      cssCodeSplit: false,
+      // css в один файл
       rollupOptions: {
         output: {
           entryFileNames: 'scripts.js',
-          assetFileNames: (assetInfo) => {
-            return assetInfo.name === 'style.css'
-              ? `${assetInfo.name}` // задается имя и папка (корень) для css
-              : `assets/${assetInfo.name}` // задается имя и папка картинкам
-          },
-        },
-      },
+          assetFileNames: assetInfo => {
+            return assetInfo.name === 'style.css' ? `${assetInfo.name}` // задается имя и папка (корень) для css
+            : `assets/${assetInfo.name}`; // задается имя и папка картинкам
+          }
+        }
+      }
     },
-    plugins: [
-      viteSassGlob()
-    ],
-  },
-})
+    plugins: [viteSassGlob()]
+  }
+});

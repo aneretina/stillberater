@@ -1,35 +1,50 @@
 .banner {
-    background:  linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);;
+    // background:  linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    background-color: #00c2c7;
     position: relative;
+    color: white;
+
+    button {
+        width: 60%;
+    }
 
     &__wrapper {
         width: 80%;
         margin: 0 auto;
+
+        @include  vp-1024 {
+            width: 60%;
+        }
     }
 
     &__bg {
         margin: 0 auto;
         background-position: right;
         background-repeat: no-repeat;
-        height: 500px;
+        height: 700px;
+        opacity: 0.3;
+
+        @include  vp-1024 {
+            opacity: 1;
+        }
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
         position: absolute;
         padding: 15px;
-        top: 20%;
+        top: 5%;
         left: 10%;
-        width: 40%;
+        width: 80%;
         max-width: 500px;
-        background-color: rgba(255, 255, 255, 0.5);
 
         &__info-background {
             z-index: 2;
         }
 
         @include  vp-1024 {
-            background-color: transparent;
-            top: 30%;
+            width: 40%;
         }
     }
 }

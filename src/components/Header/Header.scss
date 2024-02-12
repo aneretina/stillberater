@@ -1,14 +1,17 @@
 .header {
-  border-bottom: 2px solid rosybrown;
   display: flex;
-  align-items: center;
+  // align-items: center;
+  background-color: #00c2c7;;
 
   width: 100%;
   height: 80px;
 
   &__wrapper {
     display: flex;  
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    color: white;
   }
 }

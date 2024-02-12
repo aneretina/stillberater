@@ -59,8 +59,9 @@ textarea {
 
 h1 {
   font-family: $ff-lora;
-  color: gray;
+  color: white;
   font-size: $fz-header-small;
+  font-weight: bold;
 
   @include vp-768 {
     font-size: 24px;
@@ -69,6 +70,21 @@ h1 {
   @include vp-1024 {
     font-size: 32px;
   }
+}
+
+h2 {
+  font-size: $fz-header-small;
+  font-family: $ff-lora;
+
+  @include vp-768 {
+    font-size: 20px;
+  }
+
+  @include vp-1024 {
+    font-size: 30px;
+  }
+
+
 }
 
 // chrome autofill background removal
@@ -160,9 +176,12 @@ button,
 button {
   padding: 1em 2.5em 1em 2.5em;
   border: none;
-  background: #fff;
+  border-radius: 20px;
+  background: #e9d700;
   transition: all 0.1s linear;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+  color: #000;
+  margin-top: 30px;
 }
 
 a {

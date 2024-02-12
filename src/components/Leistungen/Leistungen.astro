@@ -1,0 +1,149 @@
+---
+import type { Code } from "astro:components";
+import Leistung from "../Leistung/Leistung.astro";
+import Container from "../Container/Container.astro";
+import babyImage from "../../images/baby.jpg"
+
+interface Leistung {
+    title: string
+    content: string
+}
+
+const leistungen: Leistung[] = [
+    {
+        title: "Title",
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+
+    },
+    {
+        title: "Title2",
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+
+    },
+    {
+        title: "Title3",
+        content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+
+    }
+
+]
+---
+
+<!-- <div class="leistungen">
+    <Container>
+        <div class="leistungen__wrapper">
+        {leistungen.map((element) => (
+        <Leistung leistung={element}></Leistung>
+        ))}
+        <div>
+    </Container>
+</div> -->
+<Container>
+<section class="leistungen max-w-5xl mx-auto py-10">
+    <h2>LEISTUNGEN</h2>
+    <div class="mt-10">
+       <div class="flex flex-row">
+          <div class="hidden md:flex flex-col items-center">
+             <div class="w-32 py-5 border border-gray-300 rounded mr-4 uppercase flex flex-col items-center justify-center">
+             </div>
+             <div class="h-full border-l-4 border-transparent">
+                <div class="border-l-4 mr-4 h-full border-gray-300 border-dashed"></div>
+             </div>
+          </div>
+          <div class="flex-auto border rounded-lg bg-yellow-200  border-gray-300 shadow-md">
+             <div class="flex md:flex-row flex-col items-center">
+                <div class="flex-auto">
+                   <div class="p-3 text-3xl text-gray-800 font">Find your best idea</div>
+                   <div class="px-3 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                </div>
+                <div class="md:w-96 w-full p-5"><img src={babyImage.src} alt="step 1" class="object-scale-down"></div>
+             </div>
+          </div>
+       </div>
+       <div class="flex items-start flex-row">
+          <div class="border-t-4 border-r-4 border-transparent">
+             <div class="w-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-b-4 rounded-bl-full"></div>
+          </div>
+          <div class="border-t-4 border-transparent flex-auto">
+             <div class="h-16 border-b-4 border-gray-300 border-dashed"></div>
+          </div>
+          <div class="w-16 mt-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-t-4 rounded-tr-full"></div>
+       </div>
+       <div class="flex flex-row-reverse">
+          <div class="hidden md:flex flex-col items-center">
+             <div class="w-32 py-5 border border-gray-300 rounded ml-4 uppercase flex flex-col items-center justify-center">
+                <div class="text-3xl font-black text-gray-500">Step 2</div>
+                <div class="text-gray-500 text-sm">Collaboration</div>
+             </div>
+             <div class="h-full border-r-4 border-transparent">
+                <div class="border-l-4 ml-4 h-full border-gray-300 border-dashed"></div>
+             </div>
+          </div>
+          <div class="flex-auto border rounded-lg bg-yellow-300  border-gray-300 shadow-md border-gray-300">
+             <div class="flex md:flex-row flex-col items-center">
+                <div class="flex-auto">
+                   <div class="p-3 text-3xl text-gray-800 font">Find your team and collaborate</div>
+                   <div class="px-3 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                </div>
+                <div class="md:w-96 w-full p-5"><img src={babyImage.src} alt="step 2" class="object-scale-down"></div>
+             </div>
+          </div>
+       </div>
+       <div class="flex items-start flex-row-reverse">
+          <div class="border-t-4 border-l-4 border-transparent">
+             <div class="w-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-b-4 rounded-br-full"></div>
+          </div>
+          <div class="border-t-4 border-transparent flex-auto">
+             <div class="h-16 border-b-4 border-gray-300 border-dashed"></div>
+          </div>
+          <div class="w-16 mt-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-t-4 rounded-tl-full"></div>
+       </div>
+       <div class="flex flex-row">
+          <div class="hidden md:flex flex-col items-center">
+             <div class="w-32 py-5 border border-gray-300 rounded mr-4 uppercase flex flex-col items-center justify-center">
+                <div class="text-3xl font-black text-gray-500">Step 3</div>
+                <div class="text-gray-500 text-sm">Planification</div>
+             </div>
+             <div class="h-full border-l-4 border-transparent">
+                <div class="border-l-4 mr-4 h-full border-gray-300 border-dashed"></div>
+             </div>
+          </div>
+          <div class="flex-auto border rounded-lg bg-yellow-400  border-gray-300 shadow-md  border-gray-300">
+             <div class="flex md:flex-row flex-col items-center">
+                <div class="flex-auto">
+                   <div class="p-3 text-3xl text-gray-800 font">Make a good plan and prepare tasks</div>
+                   <div class="px-3 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                </div>
+                <div class="md:w-96 w-full p-5"><img src={babyImage.src} alt="step 3" class="object-scale-down"></div>
+             </div>
+          </div>
+       </div>
+       <div class="flex items-start flex-row">
+          <div class="border-t-4 border-r-4 border-transparent">
+             <div class="w-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-b-4 rounded-bl-full"></div>
+          </div>
+          <div class="border-t-4 border-transparent flex-auto">
+             <div class="h-16 border-b-4 border-gray-300 border-dashed"></div>
+          </div>
+          <div class="w-16 mt-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-t-4 rounded-tr-full"></div>
+       </div>
+       <div class="flex flex-row-reverse">
+          <div class="hidden md:flex flex-col items-center">
+             <div class="w-32 py-5 border border-gray-300 rounded ml-4 uppercase flex flex-col items-center justify-center">
+                <div class="text-3xl font-black text-gray-500">Step 4</div>
+                <div class="text-gray-500 text-sm">Implementation</div>
+             </div>
+          </div>
+          <div class="flex-auto border rounded-lg bg-yellow-500  border-gray-300 shadow-md  border-gray-300">
+             <div class="flex md:flex-row flex-col items-center">
+                <div class="flex-auto">
+                   <div class="p-3 text-3xl text-gray-800 font">Execute, impletement your solution</div>
+                   <div class="px-3 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim consequatur nihil ipsum.</div>
+                </div>
+                <div class="md:w-96 w-full p-5"><img src={babyImage.src} alt="step 4" class="object-scale-down"></div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ </Container>

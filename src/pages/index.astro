@@ -1,6 +1,6 @@
 ---
 import Banner from '@components/Banner/Banner'
-import Container from '@components/Container/Container'
+import Leistungen from '@components/Leistungen/Leistungen'
 import Modal from '@components/Modal/Modal'
 import myImage from '@images/rosa-background.jpg'
 import MainLayout from '@layouts/Main/Main'
@@ -8,10 +8,13 @@ import { Picture } from 'astro:assets'
 ---
 
 <MainLayout title="Главная">
-    <Banner>
-      <Container>
-      </Container>
-    </Banner>
+    <Banner></Banner>
+    <Leistungen></Leistungen>
+    
+
+    
+
+    
     <!--
       Миксин генерирует все изображения из изначальной картинки (х1, х2, webp, avif)
       нужно только изначально прокинуть картинку х2
