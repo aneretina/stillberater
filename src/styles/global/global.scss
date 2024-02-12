@@ -84,9 +84,33 @@ h2 {
     font-size: 30px;
   }
 
-
 }
 
+
+.section-header {
+  background-color: #e9d700;
+  border-radius: 15px;
+  font-size: 34px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 15px 200px;
+  margin-bottom: 90px;
+  margin-top: 50px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 10%;
+    top: 75px;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #e9d700;
+  }
+}
 // chrome autofill background removal
 // если на проекте у инпутов используются разные цвета фонов\текста -
 // удалите это из глобала и используйте локально с нужными цветами
