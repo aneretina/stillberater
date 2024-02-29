@@ -1,0 +1,18 @@
+.kontakt {
+    height: 500px;
+
+    &-wrapper {
+        width: 50%;
+        margin: 0 auto;
+        border: 10px solid;
+        border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+        padding: 50px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+    }
+}
+

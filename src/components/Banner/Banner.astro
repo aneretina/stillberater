@@ -1,8 +1,8 @@
 ---
 import { fade } from "astro:transitions";
-import rosaBackground from "../../images/breastfeeding1.png"
+import logoBackground from "../../images/logo-transparent-png.png"
 import { getImage } from "astro:assets";
-const optimizedBackground = await getImage({src: rosaBackground, format: 'webp'})
+const optimizedBackground = await getImage({src: logoBackground, format: 'webp'})
 ---
 
 <div class="banner">
@@ -14,5 +14,5 @@ const optimizedBackground = await getImage({src: rosaBackground, format: 'webp'}
             <button>More about me</button>
         </div>
     </div>
-    
+    <div class="curve"></div>
 </div>

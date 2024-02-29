@@ -59,7 +59,7 @@ textarea {
 
 h1 {
   font-family: $ff-lora;
-  color: white;
+  color: #343432;
   font-size: $fz-header-small;
   font-weight: bold;
 
@@ -73,55 +73,46 @@ h1 {
 }
 
 h2 {
-  font-size: $fz-header-small;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
   font-family: $ff-lora;
+  color: #343432;
 
-  @include vp-768 {
-    font-size: 20px;
-  }
+  // @include vp-768 {
+  //   font-size: 20px;
+  // }
 
-  @include vp-1024 {
-    font-size: 30px;
-  }
+  // @include vp-1024 {
+  //   font-size: 30px;
+  // }
 
 }
 
 
 .section-header {
-  background-color: #e9d700;
   border-radius: 15px;
   font-size: 34px;
-  color: white;
+  line-height: 42px;
+  color: #363634;
   font-weight: bold;
+  padding: 0 30px;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(170,197,40), rgba(56,2,155,0));
+  border-image-slice: 1;
+  z-index: 100;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
-  padding: 15px 200px;
-  margin-bottom: 90px;
-  margin-top: 50px;
-  position: relative;
 
-  &::after {
-    position: absolute;
-    left: 10%;
-    top: 75px;
-    content: "";
-    width: 0; 
-    height: 0; 
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid #e9d700;
-  }
+  margin: 90px 0px;
 }
-// chrome autofill background removal
-// если на проекте у инпутов используются разные цвета фонов\текста -
-// удалите это из глобала и используйте локально с нужными цветами
-// rgba не подойдет, сконвертируйте цвет в hex без прозрачности
-// если в стилях уже используется box-shadow есть другое решение -
-// задать к списку транзишенов `background-color 10000000s ease-out`
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px var(--color-white);
 
   -webkit-text-fill-color: var(--color-black);
 }
+
 
 // firefox placeholder \ invalid fix + ios bdrs
 input,
@@ -201,11 +192,12 @@ button {
   padding: 1em 2.5em 1em 2.5em;
   border: none;
   border-radius: 20px;
-  background: #e9d700;
+  background: #AAC528;
   transition: all 0.1s linear;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
   color: #000;
   margin-top: 30px;
+  font-weight: bold;
 }
 
 a {

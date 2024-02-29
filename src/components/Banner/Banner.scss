@@ -1,8 +1,9 @@
 .banner {
     // background:  linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
-    background-color: #00c2c7;
+    background-color: #D4D6C9;
     position: relative;
     color: white;
+    margin-bottom: 150px;
 
     button {
         width: 60%;
@@ -11,21 +12,19 @@
     &__wrapper {
         width: 80%;
         margin: 0 auto;
-
-        @include  vp-1024 {
-            width: 60%;
-        }
     }
 
     &__bg {
         margin: 0 auto;
-        background-position: right;
+        background-position: left;
+        background-size: 25rem 25rem;
         background-repeat: no-repeat;
-        height: 700px;
-        opacity: 0.3;
+
+        height: 37rem;
+
 
         @include  vp-1024 {
-            opacity: 1;
+            background-size: 30rem 30rem;
         }
     }
 
@@ -35,7 +34,7 @@
         position: absolute;
         padding: 15px;
         top: 5%;
-        left: 10%;
+        right: 10%;
         width: 80%;
         max-width: 500px;
 
@@ -47,4 +46,35 @@
             width: 40%;
         }
     }
+}
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: white;
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color:  #D4D6C9;
+    transform: translate(-4%, 40%);
+    z-index: -1;
 }
