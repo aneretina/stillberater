@@ -1,14 +1,23 @@
 ---
 import { fade } from "astro:transitions";
-import logoBackground from "../../images/logo-transparent-png.png"
+import logoBackground from "../../images/frau.jpg"
 import { getImage } from "astro:assets";
-const optimizedBackground = await getImage({src: logoBackground, format: 'webp'})
+import { Picture } from 'astro:assets';
 ---
 
 <div class="banner">
     <div class="banner__wrapper">
-        <div class="banner__bg" style={`background-image: url(${optimizedBackground.src});`} ></div>
-        <div class="banner__info" transition:animate={fade()}>
+      <Picture
+      class="banner__bg"
+      src={logoBackground}
+      alt="Example image."
+      quality={'high'}
+      formats={['webp']}
+      fallbackFormat="jpg"
+      width={800}
+      densities={[2]}
+    />
+        <div class="banner__info">
             <h1>Hi, I'm Esther Isselbächer</h2>
             <h2>I'm specialized in women's mental health, here to help you understand and prioritize yourself.</h3>
             <a class="button-link" href="#about">More about me</a>
