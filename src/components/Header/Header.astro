@@ -32,11 +32,12 @@ const navItems: NavItem[] = [
 
 ---
 
-<header class="header">
+<header class="header sticky top-0 z-50"  :class="{ 'scrolled': !view.atTopOfPage }" >
   <Container>
-    <div class="header__wrapper">
+  <div class="header__wrapper">
        <NavBar navItems={navItems}></NavBar>
        <NavBarMobile navItems={navItems}></NavBarMobile>
     </div>
   </Container>
+        <Icon name="logo-transparent">
 </header>
