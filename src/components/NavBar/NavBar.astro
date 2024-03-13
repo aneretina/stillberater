@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-import type { Code, Debug } from "astro:components";
 
 const {navItems} = Astro.props;
 const pathname = new URL(Astro.request.url).pathname;
@@ -8,15 +7,13 @@ const currentPath = pathname.slice(1);
 
 
 
-const { 'aria-label': ariaLabel, id, text } = Astro.props;
-
 ---
 
 <nav class="hidden-tablet-only hidden-mobile-only menu-desktop">
        <ul>
         {navItems.map(({title, href}) => (
        <li>
-         <a class={currentPath === "/#welcome" ? "active" : ""} href={`#${href}`}>{title}</a></li>
+         <a href={`#${href}`}>{title}</a></li>
          ))}
      </ul>
    </nav>

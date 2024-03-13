@@ -1,0 +1,44 @@
+
+.about {
+   min-height: 600px;
+
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+
+      @include  vp-1024 {
+         display: block;
+     }
+    
+   }
+   
+   img {
+     width: 100%;
+     border-radius: 60% 40% 40% 20%;
+
+
+      @include  vp-1024 {
+         float: right;
+         clear: right;
+         width: 40rem;
+         margin: 30px;
+     }
+   }
+
+   p {
+      width: 100%;
+      margin-top: 50px;
+      float: none;
+      margin-right: 0;
+
+
+      @include  vp-1024 {
+         margin-top: 0;
+         margin-right: 50px;
+         overflow: a;
+     }
+   }
+
+}

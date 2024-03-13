@@ -15,8 +15,9 @@ html {
   font-style: normal;
   font-weight: 400;
   font-family: $ff-rubik;
-  font-size: $fz-default;
-  line-height: 1.5;
+  
+  font-size: 1.15rem;
+  line-height: 2.25rem;
   color: var(--color-black);
 
   -webkit-font-smoothing: antialiased;
@@ -26,6 +27,11 @@ html {
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
   scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
 
 body {
@@ -74,7 +80,7 @@ h1 {
 
 h2 {
   font-size: 1.25rem; /* 20px */
-  line-height: 1.75rem; /* 28px */
+  line-height: 2.5rem; /* 28px */
   font-family: $ff-lora;
   color: #343432;
 

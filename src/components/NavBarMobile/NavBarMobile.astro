@@ -1,10 +1,12 @@
 ---
 const {navItems} = Astro.props;
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); 
 ---
 
 <script>
 var burgerMenu = document.getElementById('burger-menu');
-
 var overlay = document.getElementById('menu');
 
 burgerMenu.addEventListener('click', function() {
@@ -21,7 +23,8 @@ burgerMenu.addEventListener('click', function() {
     <ul>
         {navItems.map(({title, href}) => (
        <li>
-         <a {href}>{title}</a></li>
+         <a href={`#${href}`}>{title}</a></li>
+         </li>
          ))}
      </ul>
   </div>
