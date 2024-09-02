@@ -1,12 +1,15 @@
 .kontakt {
-    height: 500px;
+    height: 300px;
+
+    @include  vp-768 {
+      height: 500px;
+    }
 
     &-wrapper {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         border: 10px solid;
         border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
-        padding: 50px;
 
         @include  vp-1024 {
           width: 50%;
@@ -18,7 +21,11 @@
     &-item {
       display: flex;
       justify-content: space-between;
-      padding: 30px;
+      padding: 10px;
+
+      @include  vp-768 {
+        padding: 30px;
+      }
     }
 }
 

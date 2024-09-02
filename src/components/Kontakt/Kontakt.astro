@@ -1,34 +1,28 @@
 ---
-import Container from "@components/Container/Container";
-import instaImage from "../../images/instagram.gif"
-import facebookImage from "../../images/facebook.gif"
-import whatsappImage from "../../images/whatsapp.gif"
-
-
+import Container from '@components/Container/Container'
+import instaImage from '../../images/instagram.gif'
+import whatsappImage from '../../images/whatsapp.gif'
+import emailImage from '../../images/email.gif'
 
 
 ---
 
 <div>
-    
-<div class="wave" id="wave"></div>
-<Container><h2 class="section-header" id="kontakt">KONTAKT</h2></Container>
-    <div class="kontakt">
-        <Container>
-            <div class="kontakt-wrapper">
-            <div class="kontakt-item">
-                <img src={instaImage.src} alt="Instagram Icon" width="50" height="50">
-                <a href="https://www.instagram.com/">https://www.instagram.com/</a>
-            </div>
-            <div class="kontakt-item">
-                <img src={facebookImage.src} alt="Facebook Icon" width="50" height="50">
-                <a href="https://www.facebook.com/">https://www.facebook.com/</a>
-            </div>
-            <div class="kontakt-item">
-                <img src={whatsappImage.src} alt="Facebook Icon" width="50" height="50">
-                <a href="tel:+4915256600444">+49 15256600444</a>
-            </div>
-            </div>
-        </Container>
-    </div>
+
+  <div class="wave" id="wave"></div>
+  <Container><h2 class="section-header" id="kontakt">KONTAKT</h2></Container>
+  <div class="kontakt">
+    <Container>
+      <div class="kontakt-wrapper">
+        <div class="kontakt-item">
+          <img src={emailImage.src} alt="Email Icon" width="50" height="50">
+          <a href="mailto:stillberatung.esther@web.de">stillberatung.esther@web.de</a>
+        </div>
+        <div class="kontakt-item">
+          <img src={whatsappImage.src} alt="Facebook Icon" width="50" height="50">
+          <a href="tel:+4915256600444">+49 15256600444</a>
+        </div>
+      </div>
+    </Container>
+  </div>
 </div>

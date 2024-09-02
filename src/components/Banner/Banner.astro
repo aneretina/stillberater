@@ -1,13 +1,11 @@
 ---
-import { fade } from "astro:transitions";
-import logoBackground from "../../images/frau.jpg"
-import { getImage } from "astro:assets";
+import logoBackground from '../../images/familie-banner.jpg'
 import { Picture } from 'astro:assets';
 ---
 
 <div class="banner" id="welcome">
-    <div class="banner__wrapper">
-      <Picture
+  <div class="banner__wrapper">
+    <Picture
       class="banner__bg"
       src={logoBackground}
       alt="Example image."
@@ -17,11 +15,11 @@ import { Picture } from 'astro:assets';
       width={800}
       densities={[2]}
     />
-        <div class="banner__info">
-            <h1>Hi, I'm Esther Isselbächer</h2>
-            <h2>I'm specialized in women's mental health, here to help you understand and prioritize yourself.</h3>
-            <a class="button-link" href="#about">More about me</a>
-        </div>
+    <div class="banner__info">
+      <h1>Mein Name ist Esther Isselbächer</h1>
+      <h2> Ich bin zertifizierte Stillberaterin und möchte der Welt mitteilen, dass stillen so viel mehr als nur Nahrungsaufnahme bedeutet.</h2>
+      <a class="button-link" href="#about">More about me</a>
     </div>
-    <div class="curve"></div>
+  </div>
+  <div class="curve"></div>
 </div>

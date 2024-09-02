@@ -1,29 +1,29 @@
 ---
-import Container from "@components/Container/Container";
-import aboutImg from "../../images/frau-about.jpg"
+import Container from '@components/Container/Container'
+import aboutImg from '../../images/esther-foto.jpg'
 import { Picture } from 'astro:assets';
 
 ---
 
 <Container>
-            <h2 class="section-header" id="about">ÜBER MICH</h2>
-            <div class="section-content about">
-                <div class="about__wrapper">
-                        <Picture
-      class="about__img"
-      src={aboutImg}
-      alt="Example image."
-      quality={'high'}
-      formats={['webp']}
-      fallbackFormat="jpg"
-      width={600}
-      densities={[2]}
-    />
-                <p class="w-2/4">
-                    <strong>Hallo ihr Lieben!</strong>
-                    <br>
-                    Mein Name ist Esther, ich bin verheiratet, lebe fast mein ganzes Leben in Kestert und  bin Mama von zwei Jungs. Während der Stillzeit von meinem ersten Kind habe ich vieles über das stillen gelernt, habe einiges falsch gemacht, bin auf verständnislosigkeit gestoßen und war in meinem Umfeld die einzige, die erfolgreich lange gestillt hat. Und das, obwohl es einige Kinder im selben Alter gab. Da ist in mir der Traum herangewachsen der Welt zu vermitteln wie wundervoll und wertvoll stillen ist. Während der Elternzeit meines zweiten Kindes habe ich mit der Ausbildung zur zertifizierten Stillberaterin begonnen und im Frühjahr 2024 erfolgreich abgeschlossen.
-                </p>
-      </div>
+  <h2 class="section-header" id="about">ÜBER MICH</h2>
+  <div class="section-content about">
+    <div class="about__wrapper">
+      <Picture
+        class="about__img"
+        src={aboutImg}
+        alt="Example image."
+        quality={'high'}
+        formats={['webp']}
+        fallbackFormat="jpg"
+        width={600}
+        densities={[2]}
+      />
+      <p class="w-2/4">
+        <strong>Hallo ihr Lieben!</strong>
+        <br>
+                    Mein Name ist Esther, ich bin verheiratet, lebe fast mein ganzes Leben in Kestert und  bin Mama von zwei Jungs. Während der Stillzeit von meinem ersten Kind habe ich vieles über das stillen gelernt, habe einiges falsch gemacht, bin auf Verständnislosigkeit gestoßen und war in meinem Umfeld die einzige, die erfolgreich lange gestillt hat. Und das, obwohl es einige Kinder im selben Alter gab. Da ist in mir der Traum herangewachsen der Welt zu vermitteln wie wundervoll und wertvoll stillen ist. Während der Elternzeit meines zweiten Kindes habe ich mit der Ausbildung zur zertifizierten Stillberaterin begonnen und im Frühjahr 2024 erfolgreich abgeschlossen.
+      </p>
     </div>
+  </div>
 </Container>
