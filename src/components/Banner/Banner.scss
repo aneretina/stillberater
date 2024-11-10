@@ -13,6 +13,7 @@
 
       @include  vp-768 {
         display: block;
+        text-align: center;
     }
     }
 
@@ -38,8 +39,8 @@
         --border: 15px;
         --gap: 12px;
         --color: #AAC528;
-        width: 30rem;
-        height: 20rem;
+        width: 38rem;
+        height: 30rem;
         object-fit: cover;
         
         box-sizing: border-box;
@@ -69,9 +70,9 @@
            #000  calc(100% - var(--border)));
         transition: --angle .4s,--gap .4s;
 
-         @include  vp-768 {
-            width: 40rem;
-            height: 30rem;
+         @include vp-767 {
+            width: 30rem;
+            height: 20rem;
         }
       }
       img:hover {
@@ -85,7 +86,7 @@
         max-width: none;
         width: 100%;
         padding: 15px;
-        max-width: 500px;
+        max-width: 650px;
     
         z-index: 2;
 
@@ -93,8 +94,8 @@
             z-index: 2;
         }
 
-        @include  vp-768 {
-            max-width: 500px;
+        @include  vp-767 {
+            max-width: 100%;
             margin-left: 0;
 
         }
