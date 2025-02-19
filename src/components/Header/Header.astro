@@ -2,46 +2,42 @@
 import Container from '@components/Container/Container'
 import NavBar from '@components/NavBar/NavBar'
 import NavBarMobile from '@components/NavBarMobile/NavBarMobile'
-import { Icon } from 'astro-icon/components';
-
+import { Icon } from 'astro-icon/components'
 
 interface NavItem {
-	title: string;
-	href: string;
+  title: string
+  href: string
 }
 
 const navItems: NavItem[] = [
   {
-  title: "Welcome",
-  href: 'welcome'
+    title: 'Über mich',
+    href: 'about'
   },
   {
-  title: "Über mich",
-  href: 'about'
+    title: 'Leistungen',
+    href: 'leistungen'
   },
   {
-  title: "Leistungen",
-  href: 'leistungen'
+    title: 'Vision',
+    href: 'vision'
   },
   {
-  title: "Vision",
-  href: 'vision'
-  },
-  {
-  title: "Kontakt",
-  href: 'kontakt'
-  },
-
+    title: 'Kontakt',
+    href: 'kontakt'
+  }
 ]
-
 ---
 
-<header class="header sticky top-0 z-50"  :class="{ 'scrolled': !view.atTopOfPage }" >
+<header
+  class="header sticky top-0 z-50"
+  :class="{ 'scrolled': !view.atTopOfPage }"
+>
   <Container>
-  <div class="header__wrapper">
-       <NavBar navItems={navItems}></NavBar>
-       <NavBarMobile navItems={navItems}></NavBarMobile>
+    <div class="header__wrapper">
+      <NavBar navItems={navItems} />
+      <NavBarMobile navItems={navItems} />
     </div>
   </Container>
-        <Icon name="logo-transparent">
+  <Icon class="header-logo" name="logo-transparent" />
 </header>

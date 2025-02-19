@@ -1,0 +1,20 @@
+<button class="back-to-top" type="button"></button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const amountScrolled = 200
+    const button = document.querySelector('.back-to-top')
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > amountScrolled) {
+        button.classList.add('show')
+      } else {
+        button.classList.remove('show')
+      }
+    })
+
+    button.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+  })
+</script>

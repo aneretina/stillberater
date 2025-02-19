@@ -1,25 +1,28 @@
 .header {
   display: flex;
-  background-color: #D4D6C9;   
+  background-color: #D4D6C9;
 
   width: 100%;
-  height: 100px;
+  height: 80px;
 
   &__wrapper {
-    display: flex;  
+    display: flex;
     justify-content: flex-start;
 
-    @include  vp-1024 {
+    @include vp-1024 {
       justify-content: center;
     }
   }
 
-  svg {
+  .header-logo {
     width: 80px;
     height: 80px;
     display: block;
+    background-color: #D4D6C9;
+    border-radius: 20%;
+    box-shadow: inset 0px 0px 40px 40px #D4D6C9;
 
-    @include  vp-768 {
+    @include vp-768 {
       width: 150px;
       height: 150px;
     }
