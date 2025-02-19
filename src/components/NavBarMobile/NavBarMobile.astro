@@ -1,30 +1,41 @@
 ---
-const {navItems} = Astro.props;
-
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1); 
+const { navItems } = Astro.props
 ---
 
-<script>
-var burgerMenu = document.getElementById('burger-menu');
-var overlay = document.getElementById('menu');
-
-burgerMenu.addEventListener('click', function() {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
-</script>
-
 <div id="burger-menu" class="hidden-desktop-only">
-    <span></span>
-  </div>
-  
-  <div id="menu">
-    <ul>
-        {navItems.map(({title, href}) => (
-       <li>
-         <a href={`#${href}`}>{title}</a></li>
-         </li>
-         ))}
-     </ul>
-  </div>
+  <span></span>
+</div>
+
+<div id="menu">
+  <ul>
+    {
+      navItems.map(({ title, href }) => (
+        <li>
+          <a href={`#${href}`}>{title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let burgerMenu = document.getElementById('burger-menu')
+    let overlay = document.getElementById('menu')
+
+    function openMenu() {
+      document.body.style.overflow = 'hidden'
+      burgerMenu.classList.add('close')
+      overlay.classList.add('overlay')
+    }
+
+    function closeMenu() {
+      document.body.style.overflow = ''
+      burgerMenu.classList.remove('close')
+      overlay.classList.remove('overlay')
+    }
+
+    burgerMenu.addEventListener('click', openMenu)
+    overlay.addEventListener('click', closeMenu)
+  })
+</script>
