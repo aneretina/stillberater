@@ -83,15 +83,6 @@ h2 {
   line-height: 2.5rem; /* 28px */
   font-family: $ff-lora;
   color: #343432;
-
-  // @include vp-767 {
-  //   font-size: 20px;
-  // }
-
-  // @include vp-1023 {
-  //   font-size: 24px;
-  // }
-
 }
 
 
@@ -138,7 +129,6 @@ select {
   border-radius: 0;
 }
 
-// ie11 X removal
 input {
 
   &::-ms-clear,
@@ -201,17 +191,22 @@ button,
   background-color: #AAC528;
   transition: all 0.1s linear;
   box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
-  color: #000;
   margin-top: 30px;
-  font-weight: bold;
+  font-weight: 500;
+  color: rgb(75, 75, 75);
   width: 50%;
+
+  &:hover {
+    font-weight: 700;
+    color: #000;
+  }
 }
 
 a {
-  color: rgb(47, 45, 45);
+  color: rgb(75, 75, 75);
 
   &:hover {
-    font-weight: bold;
+    font-weight: 700;
     color: #000;
   }
 }

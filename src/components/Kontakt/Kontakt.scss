@@ -21,6 +21,7 @@
     &-item {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       padding: 10px;
 
       @include  vp-768 {

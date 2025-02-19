@@ -3,6 +3,7 @@
     position: relative;
     color: white;
     margin-bottom: 150px;
+    height: 48rem;
 
     button {
         width: 60%;
@@ -18,11 +19,14 @@
     }
 
     &__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        height: 40rem;
         max-width: 1500px;
         align-items: center;
         flex-wrap: wrap;
@@ -30,8 +34,7 @@
         @include  vp-768 {
            flex-direction: row;
            justify-content: space-between;
-           height: 45rem;
-           width: 80%;
+           width: 90%;
         }
     }
 
@@ -39,8 +42,8 @@
         --border: 15px;
         --gap: 12px;
         --color: #AAC528;
-        width: 38rem;
-        height: 30rem;
+        width: 32rem;
+        height: 28rem;
         object-fit: cover;
         
         box-sizing: border-box;
@@ -70,7 +73,8 @@
            #000  calc(100% - var(--border)));
         transition: --angle .4s,--gap .4s;
 
-         @include vp-767 {
+
+         @include vp-1023 {
             width: 30rem;
             height: 20rem;
         }
