@@ -15,7 +15,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-family: $ff-rubik;
-  
+
   font-size: 1.15rem;
   line-height: 2.25rem;
   color: var(--color-black);
@@ -30,8 +30,13 @@ html {
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 2.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+
+  @include vp-1024 {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 body {
@@ -79,8 +84,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem; /* 20px */
-  line-height: 2.5rem; /* 28px */
+  font-size: 1rem;
+  /* 20px */
+  line-height: 2.5rem;
+  /* 28px */
   font-family: $ff-lora;
   color: #343432;
 }
@@ -94,7 +101,7 @@ h2 {
   font-weight: bold;
   padding: 0 30px;
   border-bottom: 4px solid transparent;
-  border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(170,197,40), rgba(56,2,155,0));
+  border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(170, 197, 40), rgba(56, 2, 155, 0));
   border-image-slice: 1;
   z-index: 100;
   height: 100%;
@@ -104,6 +111,7 @@ h2 {
 
   margin: 90px 0px;
 }
+
 input:-webkit-autofill {
   box-shadow: inset 0 0 0 1000px var(--color-white);
 
