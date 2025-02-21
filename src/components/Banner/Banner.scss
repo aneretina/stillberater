@@ -1,12 +1,27 @@
 .banner {
   background-color: #D4D6C9;
   position: relative;
-  color: white;
+  color: #343432;
   margin-bottom: 150px;
   height: 48rem;
 
   button {
     width: 60%;
+  }
+
+  li {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  p {
+    padding-left: 10px;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
   }
 
   .button-link {
