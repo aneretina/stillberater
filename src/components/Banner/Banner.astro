@@ -8,7 +8,9 @@ import { Picture } from 'astro:assets'
   <div class="banner__wrapper">
     <div class="banner__left">
       <Picture
+        data-aos="fade-right"
         class="banner__bg"
+        data-aos-duration="1500"
         src={logoBackground}
         alt="Example image."
         quality={'high'}
@@ -18,7 +20,7 @@ import { Picture } from 'astro:assets'
         densities={[2]}
       />
     </div>
-    <div class="banner__info">
+    <div class="banner__info" data-aos="fade-left" data-aos-duration="1500">
       <h1>Hallo und herzlich willkommen</h1>
       <p>
         Ich bin Esther, zertifizierte Stillberaterin, und habe meinen Traum zum
@@ -34,16 +36,16 @@ import { Picture } from 'astro:assets'
   </div>
 
   <Container>
-    <div class="banner__right mt-4">
+    <div class="banner__right mt-4" data-aos="fade-up" data-aos-duration="1500">
       <h2 class="mb-3">&#127775 Was du bei mir bekommst:</h2>
       <ul class="list-emoji">
-        <li>
+        <li data-aos="zoom-in" data-aos-duration="1500">
           <span>&#9989</span><p>Stillvorbereitungskurse für werdende Eltern</p>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-duration="2000">
           <span>&#9989</span><p>Persönliche Beratung nach der Geburt</p>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-duration="2500">
           <span>&#9989</span><p>
             Praktische Tipps & Lösungen für Stillprobleme
           </p>

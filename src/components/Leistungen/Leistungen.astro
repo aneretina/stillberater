@@ -31,7 +31,7 @@ import leistung3 from '../../images/esther-elia.jpg'
     <section class="mx-auto">
       <div class="mt-10">
         <!-- Step 1 -->
-        <div class="flex flex-row">
+        <div class="flex flex-row" data-aos="fade-right">
           <div class="hidden md:flex flex-col items-center">
             <div
               class="w-32 py-5 border border-gray-600 rounded mr-4 uppercase flex flex-col items-center justify-center"
@@ -103,7 +103,7 @@ import leistung3 from '../../images/esther-elia.jpg'
         </div>
 
         <!-- Step 1 Separator -->
-        <div class="flex items-start flex-row">
+        <div class="flex items-start flex-row" data-aos="fade-up">
           <div class="border-t-4 border-r-4 border-transparent">
             <div
               class="w-16 ml-16 h-16 border-l-4 border-gray-600 border-dashed border-b-4 rounded-bl-full"
@@ -120,7 +120,7 @@ import leistung3 from '../../images/esther-elia.jpg'
         </div>
 
         <!-- Step 2 (Text and Image Reversed) -->
-        <div class="flex flex-row-reverse">
+        <div class="flex flex-row-reverse" data-aos="fade-left">
           <div class="hidden md:flex flex-col items-center">
             <div
               class="w-32 py-5 border border-gray-600 rounded ml-4 uppercase flex flex-col items-center justify-center"
@@ -189,7 +189,7 @@ import leistung3 from '../../images/esther-elia.jpg'
         </div>
 
         <!-- Step 2 Separator -->
-        <div class="flex items-start flex-row">
+        <div class="flex items-start flex-row" data-aos="fade-up">
           <div class="border-t-4 border-r-4 border-transparent">
             <div
               class="w-16 ml-16 h-16 border-l-4 border-gray-600 border-dashed border-b-4 rounded-bl-full"
@@ -206,7 +206,7 @@ import leistung3 from '../../images/esther-elia.jpg'
         </div>
 
         <!-- Step 3 (Styled like Step 1) -->
-        <div class="flex flex-row">
+        <div class="flex flex-row" data-aos="fade-right">
           <div class="hidden md:flex flex-col items-center">
             <div
               class="w-32 py-5 border border-gray-600 rounded mr-4 uppercase flex flex-col items-center justify-center"
@@ -345,6 +345,10 @@ import leistung3 from '../../images/esther-elia.jpg'
 </div>
 
 <script>
+  import AOS from 'aos'
+  import 'aos/dist/aos.css'
+
+  AOS.init()
   const showPopupButton = document.getElementById('showPopupButton')
   const popup = document.getElementById('popup')
   const closePopupButton = document.getElementById('closePopupButton')
