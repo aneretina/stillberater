@@ -5,28 +5,38 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      position: relative;
       width: 100%;
 
-      @include  vp-1024 {
+      @include vp-1024 {
          display: block;
-     }
-    
+      }
+
    }
-   
-   img {
-     width: 100%;
-     border-radius: 60% 40% 40% 20%;
-     height: 40rem;
-     object-fit: cover;
+
+   .about__img {
+      width: 100%;
+      border-radius: 60% 40% 40% 20%;
+      height: 38rem;
+      object-fit: cover;
+      opacity: 0.8;
 
 
-      @include  vp-1024 {
+      @include vp-1024 {
          float: right;
          clear: right;
-         width: 40rem;
+         width: 35rem;
          margin: 30px;
          margin-bottom: 100px;
-     }
+      }
+   }
+
+   .about__cert {
+      position: absolute;
+      bottom: -5rem;
+      right: 0;
+      width: 14rem;
+      height: 18rem;
    }
 
    p {
@@ -36,11 +46,11 @@
       margin-right: 0;
 
 
-      @include  vp-1024 {
+      @include vp-1024 {
          margin-top: 0;
          margin-right: 50px;
          overflow: a;
-     }
+      }
    }
 
    strong {

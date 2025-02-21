@@ -1,6 +1,7 @@
 ---
 import Container from '@components/Container/Container'
 import aboutImg from '../../images/esther-foto.jpg'
+import zetifikatImg from '../../images/zertifikat.jpeg'
 import { Picture } from 'astro:assets'
 ---
 
@@ -15,8 +16,15 @@ import { Picture } from 'astro:assets'
         quality={'high'}
         formats={['webp']}
         fallbackFormat="jpg"
-        width={600}
+        width={400}
         densities={[2]}
+      />
+      <img
+        src={zetifikatImg.src}
+        class="about__cert"
+        width="100"
+        height="150"
+        alt="Zertifikate"
       />
       <p class="w-2/4">
         <strong>Hallo ihr Lieben!</strong>
