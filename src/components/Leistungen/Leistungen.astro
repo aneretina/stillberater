@@ -22,7 +22,7 @@ import leistung3 from '../../images/esther-elia.jpg'
     ></defs
   ><path
     style="transform:translate(0, 0px); opacity:1"
-    fill="url(#sw-gradient-0)"
+    fill="#D4D6C9"
     d="M0,117L48,106.2C96,95,192,74,288,56.3C384,39,480,26,576,30.3C672,35,768,56,864,69.3C960,82,1056,87,1152,82.3C1248,78,1344,65,1440,67.2C1536,69,1632,87,1728,86.7C1824,87,1920,69,2016,60.7C2112,52,2208,52,2304,58.5C2400,65,2496,78,2592,78C2688,78,2784,65,2880,69.3C2976,74,3072,95,3168,99.7C3264,104,3360,91,3456,78C3552,65,3648,52,3744,52C3840,52,3936,65,4032,58.5C4128,52,4224,26,4320,28.2C4416,30,4512,61,4608,65C4704,69,4800,48,4896,36.8C4992,26,5088,26,5184,36.8C5280,48,5376,69,5472,71.5C5568,74,5664,56,5760,56.3C5856,56,5952,74,6048,75.8C6144,78,6240,65,6336,54.2C6432,43,6528,35,6624,41.2C6720,48,6816,69,6864,80.2L6912,91L6912,130L6864,130C6816,130,6720,130,6624,130C6528,130,6432,130,6336,130C6240,130,6144,130,6048,130C5952,130,5856,130,5760,130C5664,130,5568,130,5472,130C5376,130,5280,130,5184,130C5088,130,4992,130,4896,130C4800,130,4704,130,4608,130C4512,130,4416,130,4320,130C4224,130,4128,130,4032,130C3936,130,3840,130,3744,130C3648,130,3552,130,3456,130C3360,130,3264,130,3168,130C3072,130,2976,130,2880,130C2784,130,2688,130,2592,130C2496,130,2400,130,2304,130C2208,130,2112,130,2016,130C1920,130,1824,130,1728,130C1632,130,1536,130,1440,130C1344,130,1248,130,1152,130C1056,130,960,130,864,130C768,130,672,130,576,130C480,130,384,130,288,130C192,130,96,130,48,130L0,130Z"
   ></path></svg
 >
@@ -30,6 +30,7 @@ import leistung3 from '../../images/esther-elia.jpg'
   <Container>
     <section class="mx-auto">
       <div class="mt-10">
+        <!-- Step 1 -->
         <div class="flex flex-row">
           <div class="hidden md:flex flex-col items-center">
             <div
@@ -52,9 +53,9 @@ import leistung3 from '../../images/esther-elia.jpg'
                 <div class="px-3 pb-6">
                   <p>
                     Dein Baby ist da – und plötzlich läuft das Stillen nicht so,
-                    wie du es dir vorgestellt hast? &#128562
+                    wie du es dir vorgestellt hast? &#128562;
                   </p>
-                  <ul>
+                  <ul class="list-emoji">
                     <li>
                       <span> &#10060</span><p>
                         Dein Baby dockt nicht richtig an?
@@ -75,16 +76,18 @@ import leistung3 from '../../images/esther-elia.jpg'
                       </p>
                     </li>
                   </ul>
-                  <p><strong>STOPP! Du musst da nicht allein durch!</strong></p>
-                  <p>
-                    Melde dich bei mir – <strong>
-                      Erstkontakt ist kostenlos & unverbindlich.</strong
+                  <p class="mt-4">
+                    <strong>STOPP! Du musst da nicht allein durch!</strong>
+                  </p>
+                  <p class="mt-4">
+                    Melde dich bei mir – <strong
+                      >Erstkontakt ist kostenlos & unverbindlich.</strong
                     > Gemeinsam finden wir eine Lösung, die zu dir und deinem Baby
                     passt.
-                    <p>
-                      📧 Kontakt per Mail, WhatsApp oder Telefon – ich bin für
-                      dich da!
-                    </p>
+                  </p>
+                  <p class="mt-4">
+                    &#128229; Kontakt per Mail, WhatsApp oder Telefon – ich bin
+                    für dich da!
                   </p>
                 </div>
               </div>
@@ -98,6 +101,8 @@ import leistung3 from '../../images/esther-elia.jpg'
             </div>
           </div>
         </div>
+
+        <!-- Step 1 Separator -->
         <div class="flex items-start flex-row">
           <div class="border-t-4 border-r-4 border-transparent">
             <div
@@ -113,13 +118,13 @@ import leistung3 from '../../images/esther-elia.jpg'
           >
           </div>
         </div>
+
+        <!-- Step 2 (Text and Image Reversed) -->
         <div class="flex flex-row-reverse">
           <div class="hidden md:flex flex-col items-center">
             <div
               class="w-32 py-5 border border-gray-600 rounded ml-4 uppercase flex flex-col items-center justify-center"
             >
-              <div class="text-3xl font-black text-gray-500">Step 2</div>
-              <div class="text-gray-500 text-sm">Collaboration</div>
             </div>
             <div class="h-full border-r-4 border-transparent">
               <div class="border-l-4 ml-4 h-full border-gray-600 border-dashed">
@@ -127,11 +132,11 @@ import leistung3 from '../../images/esther-elia.jpg'
             </div>
           </div>
           <div
-            class="flex-auto border rounded-lg bg-white border-gray-600 leistungen-shadow"
+            class="flex-auto border rounded-lg bg-white leistungen-shadow border-gray-600"
           >
             <div class="flex lg:flex-row-reverse flex-col items-center">
               <div class="flex-auto">
-                <div class="p-3 text-3xl text-[#AAC528] font-bold">
+                <div class="p-3 text-2xl text-[#AAC528] font-bold">
                   Stillvorbereitung – weil ein guter Start zählt!
                 </div>
                 <div class="px-3 pb-6">
@@ -140,7 +145,7 @@ import leistung3 from '../../images/esther-elia.jpg'
                     vorbereiten? Perfekt! Denn je mehr du weißt, desto
                     entspannter wird dein Stillstart.💛
                   </p>
-                  <ul>
+                  <ul class="list-emoji">
                     <li>
                       <span>🤱</span><p>
                         Was brauche ich wirklich fürs Stillen?
@@ -161,62 +166,69 @@ import leistung3 from '../../images/esther-elia.jpg'
                       <span>😲</span><p>Oder hast du ganz andere Sorgen?</p>
                     </li>
                   </ul>
-                  <p>
+                  <p class="mt-4">
                     <strong>Kein Problem</strong> – ich bin für dich da! Melde dich
-                    per Mail, WhatsApp oder Telefon.<strong
-                      >Der Erstkontakt ist kostenlos & unverbindlich.</strong
+                    per Mail, WhatsApp oder Telefon.<strong>
+                      Der Erstkontakt ist kostenlos & unverbindlich.</strong
                     >
                   </p>
-                  <p>📧 Starte selbstbewusst in deine Stillzeit!</p>
+                  <p class="mt-4">
+                    &#128229; Starte selbstbewusst in deine Stillzeit!
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="w-full p-5">
-              <img src={leistung2.src} alt="step 2" class="object-scale-down" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex items-start flex-row-reverse">
-        <div class="border-t-4 border-l-4 border-transparent">
-          <div
-            class="w-16 mr-16 h-16 border-r-4 border-gray-600 border-dashed border-b-4 rounded-br-full"
-          >
-          </div>
-        </div>
-        <div class="border-t-4 border-transparent flex-auto">
-          <div class="h-16 border-b-4 border-gray-600 border-dashed"></div>
-        </div>
-        <div
-          class="w-16 mt-16 ml-16 h-16 border-l-4 border-gray-600 border-dashed border-t-4 rounded-tl-full"
-        >
-        </div>
-      </div>
-      <div class="flex flex-row">
-        <div class="hidden md:flex flex-col items-center">
-          <div
-            class="w-32 py-5 border border-gray-600 rounded mr-4 uppercase flex flex-col items-center justify-center"
-          >
-            <div class="text-2xl font-black text-gray-500">Step 3</div>
-            <div class="text-gray-500 text-sm">Planification</div>
-          </div>
-          <div class="h-full border-l-4 border-transparent">
-            <div class="border-l-4 mr-4 h-full border-gray-600 border-dashed">
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex-auto border rounded-lg bg-white border-gray-600 leistunge-shadow border-gray-600"
-        >
-          <div class="flex lg:flex-row flex-col items-center">
-            <div class="flex-auto">
-              <div class="p-3 text-2xl text-[#AAC528] font-bold">
-                Stillvorbereitungskurs – Dein perfekter Start in die Stillzeit!
+              <div class="md:w-96 w-full p-5">
+                <img
+                  src={leistung2.src}
+                  alt="step 2"
+                  class="object-scale-down"
+                />
               </div>
-              <div class="px-3 pb-6">
-                <div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 Separator -->
+        <div class="flex items-start flex-row">
+          <div class="border-t-4 border-r-4 border-transparent">
+            <div
+              class="w-16 ml-16 h-16 border-l-4 border-gray-600 border-dashed border-b-4 rounded-bl-full"
+            >
+            </div>
+          </div>
+          <div class="border-t-4 border-transparent flex-auto">
+            <div class="h-16 border-b-4 border-gray-600 border-dashed"></div>
+          </div>
+          <div
+            class="w-16 mt-16 mr-16 h-16 border-r-4 border-gray-600 border-dashed border-t-4 rounded-tr-full"
+          >
+          </div>
+        </div>
+
+        <!-- Step 3 (Styled like Step 1) -->
+        <div class="flex flex-row">
+          <div class="hidden md:flex flex-col items-center">
+            <div
+              class="w-32 py-5 border border-gray-600 rounded mr-4 uppercase flex flex-col items-center justify-center"
+            >
+            </div>
+            <div class="h-full border-l-4 border-transparent">
+              <div class="border-l-4 mr-4 h-full border-gray-600 border-dashed">
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-auto border rounded-lg bg-white leistungen-shadow border-gray-600"
+          >
+            <div class="flex lg:flex-row flex-col items-center relative">
+              <div class="flex-auto">
+                <div class="p-3 text-2xl text-[#AAC528] font-bold">
+                  Stillvorbereitungskurs – Dein perfekter Start in die
+                  Stillzeit!
+                </div>
+                <div class="px-3 pb-6">
                   <p>Du bekommst ein Baby? WOW! Aber du fragst dich:</p>
-                  <ul>
+                  <ul class="list-emoji">
                     <li><span>🤯</span><p>Wird das Stillen klappen?</p></li>
                     <li>
                       <span>🤱</span><p>Welche Stillpositionen gibt es?</p>
@@ -227,84 +239,130 @@ import leistung3 from '../../images/esther-elia.jpg'
                       </p>
                     </li>
                   </ul>
-                </div>
-
-                <div>
-                  <p>
-                    <strong>Keine Sorge</strong> – ich hab die Antworten! In meinem
-                    Kurs bekommst du:
-                  </p>
-                  <ul>
-                    <li>
-                      <span>✔</span><p>
-                        Fundiertes Wissen statt Mythen & Ammenmärchen
-                      </p>
-                    </li>
-                    <li>
-                      <span>✔</span><p>
-                        Tipps, was du WIRKLICH brauchst (und was nicht!)
-                      </p>
-                    </li>
-                    <li>
-                      <span>✔</span><p>
-                        Stillpositionen erklärt – damit du entspannt starten
-                        kannst
-                      </p>
-                    </li>
-                    <li>
-                      <span>📧</span><p>
-                        Melde dich jetzt an & geh mit einem guten Gefühl in
-                        deine Stillzeit!
-                      </p>
-                    </li>
-                  </ul>
-
-                  <ul>
-                    <li>
-                      <span>&#128205;</span><p>
-                        Ort: Hebammenpraxis Katja Wachsmann, Kamp-Bornhofen
-                      </p>
-                    </li>
-                    <li>
-                      <span>🗓</span><p>
-                        Termine: Sonntag, 27.04. & 04.05. um 10 Uhr
-                      </p>
-                    </li>
-                    <li><span>&#8987;</span><p>Dauer: 2 x 1,5 Stunden</p></li>
-                    <li>
-                      <span>&#128176;</span><p>
-                        Kosten: 45 € pro Person, Partner zusätzlich 10 €
-                      </p>
-                    </li>
-                  </ul>
+                  <div class="mt-4">
+                    <p>
+                      <strong>Keine Sorge</strong> – ich hab die Antworten! In meinem
+                      Kurs bekommst du:
+                    </p>
+                    <ul class="list-emoji">
+                      <li>
+                        <span>✔</span><p>
+                          Fundiertes Wissen statt Mythen & Ammenmärchen
+                        </p>
+                      </li>
+                      <li>
+                        <span>✔</span><p>
+                          Tipps, was du WIRKLICH brauchst (und was nicht!)
+                        </p>
+                      </li>
+                      <li>
+                        <span>✔</span><p>
+                          Stillpositionen erklärt – damit du entspannt starten
+                          kannst
+                        </p>
+                      </li>
+                      <li>
+                        <span>&#128229;</span><p>
+                          Melde dich jetzt an & geh mit einem guten Gefühl in
+                          deine Stillzeit!
+                        </p>
+                      </li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="button-link"
+                      id="showPopupButton"
+                    >
+                      Kommende Termine entdecken!
+                    </button>
+                  </div>
                 </div>
               </div>
+              <div class="md:w-96 w-full p-5">
+                <img
+                  src={leistung3.src}
+                  alt="step 3"
+                  class="object-scale-down"
+                />
+              </div>
             </div>
-            <div class="md:w-96 w-full p-5">
-              <img src={leistung3.src} alt="step 3" class="object-scale-down" />
-            </div>
+          </div>
+        </div>
+
+        <div id="popup" class="popup-overlay">
+          <div class="popup-content">
+            <span class="close-btn" id="closePopupButton">&times;</span>
+            <h2 class="text-center text-2xl my-4">
+              <strong>Stillvorbereitungskurs</strong>
+            </h2>
+            <ul class="mt-4 list-emoji werbung">
+              <li>
+                <span>&#128205;</span><p>
+                  <strong>Ort:</strong> Hebammenpraxis Katja Wachsmann, Kamp-Bornhofen
+                </p>
+              </li>
+              <li>
+                <span>🗓</span><p>
+                  <strong>Termine:</strong> Sonntag, 27.04. & 04.05. um 10 Uhr
+                </p>
+              </li>
+              <li>
+                <span>&#8987;</span><p>
+                  <strong>Dauer:</strong> 2 x 1,5 Stunden
+                </p>
+              </li>
+              <li>
+                <span>&#128176;</span><p>
+                  <strong>Kosten:</strong> 45 € pro Person, Partner zusätzlich 10
+                  €
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
   </Container>
+
+  <svg
+    id="wave"
+    style="transform:rotate(180deg); transition: 0.3s"
+    viewBox="0 0 1440 130"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    ><defs
+      ><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"
+        ><stop stop-color="rgba(203, 201, 214, 1)" offset="0%"></stop><stop
+          stop-color="rgba(203, 201, 214, 1)"
+          offset="100%"></stop></linearGradient
+      ></defs
+    ><path
+      style="transform:translate(0, 0px); opacity:1"
+      fill="#D4D6C9"
+      d="M0,13L80,23.8C160,35,320,56,480,54.2C640,52,800,26,960,13C1120,0,1280,0,1440,6.5C1600,13,1760,26,1920,28.2C2080,30,2240,22,2400,26C2560,30,2720,48,2880,49.8C3040,52,3200,39,3360,36.8C3520,35,3680,43,3840,56.3C4000,69,4160,87,4320,95.3C4480,104,4640,104,4800,104C4960,104,5120,104,5280,106.2C5440,108,5600,113,5760,112.7C5920,113,6080,108,6240,91C6400,74,6560,43,6720,43.3C6880,43,7040,74,7200,86.7C7360,100,7520,95,7680,91C7840,87,8000,82,8160,73.7C8320,65,8480,52,8640,56.3C8800,61,8960,82,9120,93.2C9280,104,9440,104,9600,101.8C9760,100,9920,95,10080,93.2C10240,91,10400,91,10560,78C10720,65,10880,39,11040,43.3C11200,48,11360,82,11440,99.7L11520,117L11520,130L11440,130C11360,130,11200,130,11040,130C10880,130,10720,130,10560,130C10400,130,10240,130,10080,130C9920,130,9760,130,9600,130C9440,130,9280,130,9120,130C8960,130,8800,130,8640,130C8480,130,8320,130,8160,130C8000,130,7840,130,7680,130C7520,130,7360,130,7200,130C7040,130,6880,130,6720,130C6560,130,6400,130,6240,130C6080,130,5920,130,5760,130C5600,130,5440,130,5280,130C5120,130,4960,130,4800,130C4640,130,4480,130,4320,130C4160,130,4000,130,3840,130C3680,130,3520,130,3360,130C3200,130,3040,130,2880,130C2720,130,2560,130,2400,130C2240,130,2080,130,1920,130C1760,130,1600,130,1440,130C1280,130,1120,130,960,130C800,130,640,130,480,130C320,130,160,130,80,130L0,130Z"
+    ></path></svg
+  >
 </div>
 
-<svg
-  id="wave"
-  style="transform:rotate(180deg); transition: 0.3s"
-  viewBox="0 0 1440 130"
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  ><defs
-    ><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"
-      ><stop stop-color="rgba(203, 201, 214, 1)" offset="0%"></stop><stop
-        stop-color="rgba(203, 201, 214, 1)"
-        offset="100%"></stop></linearGradient
-    ></defs
-  ><path
-    style="transform:translate(0, 0px); opacity:1"
-    fill="url(#sw-gradient-0)"
-    d="M0,13L80,23.8C160,35,320,56,480,54.2C640,52,800,26,960,13C1120,0,1280,0,1440,6.5C1600,13,1760,26,1920,28.2C2080,30,2240,22,2400,26C2560,30,2720,48,2880,49.8C3040,52,3200,39,3360,36.8C3520,35,3680,43,3840,56.3C4000,69,4160,87,4320,95.3C4480,104,4640,104,4800,104C4960,104,5120,104,5280,106.2C5440,108,5600,113,5760,112.7C5920,113,6080,108,6240,91C6400,74,6560,43,6720,43.3C6880,43,7040,74,7200,86.7C7360,100,7520,95,7680,91C7840,87,8000,82,8160,73.7C8320,65,8480,52,8640,56.3C8800,61,8960,82,9120,93.2C9280,104,9440,104,9600,101.8C9760,100,9920,95,10080,93.2C10240,91,10400,91,10560,78C10720,65,10880,39,11040,43.3C11200,48,11360,82,11440,99.7L11520,117L11520,130L11440,130C11360,130,11200,130,11040,130C10880,130,10720,130,10560,130C10400,130,10240,130,10080,130C9920,130,9760,130,9600,130C9440,130,9280,130,9120,130C8960,130,8800,130,8640,130C8480,130,8320,130,8160,130C8000,130,7840,130,7680,130C7520,130,7360,130,7200,130C7040,130,6880,130,6720,130C6560,130,6400,130,6240,130C6080,130,5920,130,5760,130C5600,130,5440,130,5280,130C5120,130,4960,130,4800,130C4640,130,4480,130,4320,130C4160,130,4000,130,3840,130C3680,130,3520,130,3360,130C3200,130,3040,130,2880,130C2720,130,2560,130,2400,130C2240,130,2080,130,1920,130C1760,130,1600,130,1440,130C1280,130,1120,130,960,130C800,130,640,130,480,130C320,130,160,130,80,130L0,130Z"
-  ></path></svg
->
+<script>
+  const showPopupButton = document.getElementById('showPopupButton')
+  const popup = document.getElementById('popup')
+  const closePopupButton = document.getElementById('closePopupButton')
+
+  // Zeige das Popup an, wenn der Button angeklickt wird
+  showPopupButton.addEventListener('click', function () {
+    popup.style.display = 'flex'
+  })
+
+  // Schließe das Popup, wenn der "Schließen"-Button angeklickt wird
+  closePopupButton.addEventListener('click', function () {
+    popup.style.display = 'none'
+  })
+
+  // Schließe das Popup, wenn irgendwo außerhalb des Popups geklickt wird
+  window.addEventListener('click', function (event) {
+    if (event.target === popup) {
+      popup.style.display = 'none'
+    }
+  })
+</script>

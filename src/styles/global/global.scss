@@ -22,10 +22,7 @@ html {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
-  // если по прежнему есть проблемы с выравниванием
-  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
   scroll-behavior: smooth;
 }
 
@@ -73,6 +70,7 @@ h1 {
   color: #343432;
   font-size: $fz-header-small;
   font-weight: bold;
+  margin-bottom: 30px;
 
   @include vp-768 {
     font-size: 24px;
@@ -193,7 +191,7 @@ button,
 }
 
 .button-link {
-  padding: 1em 2.5em 1em 2.5em;
+  padding: 1em;
   border: none;
   border-radius: 20px;
   background-color: #AAC528;
@@ -202,11 +200,11 @@ button,
   margin-top: 30px;
   font-weight: 500;
   color: rgb(75, 75, 75);
-  width: 50%;
 
   &:hover {
     font-weight: 700;
     color: #000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 }
 
@@ -221,4 +219,24 @@ a {
 
 .hidden {
   display: none;
+}
+
+.list-emoji {
+  list-style: none;
+  margin-top: 0.5rem;
+
+  li {
+    display: flex;
+  }
+
+  p {
+    padding-left: 10px;
+    font-size: 1rem;
+    line-height: 2rem;
+
+    @include vp-1024 {
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+    }
+  }
 }

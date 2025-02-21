@@ -1,5 +1,4 @@
 .menu-desktop {
-
     & ul {
         list-style: none;
         display: flex;
@@ -10,6 +9,10 @@
     & li {
         padding: 20px;
         font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     & a {
