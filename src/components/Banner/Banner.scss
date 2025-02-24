@@ -3,13 +3,7 @@
   position: relative;
   color: #343432;
   margin-bottom: 150px;
-  height: 48rem;
-
-
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
+  height: 38rem;
 
   p {
     font-size: 1rem;
@@ -37,16 +31,15 @@
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     max-width: 1500px;
     align-items: center;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
 
     @include vp-1024 {
-      flex-direction: row;
       justify-content: space-between;
       width: 90%;
-      padding-top: 70px;
+      padding-top: 50px;
     }
   }
 

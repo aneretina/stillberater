@@ -1,0 +1,63 @@
+---
+import Container from '@components/Container/Container'
+import zetifikatImg from '../../images/zertifikat.jpeg'
+import zetifikat2Img from '../../images/zertifikat2.jpeg'
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
+---
+
+<Container>
+  <h2 class="section-header" id="qualifikationen">MEINE QUALIFIKATIONEN</h2>
+  <div class="flex justify-between mx-auto w-3/4 flex-wrap zertifikat">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src={zetifikatImg.src} alt="Zertifikate" />
+        </div>
+        <div class="swiper-slide">
+          <img src={zetifikat2Img.src} alt="Zertifikate" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="mt-4 ml-4" data-aos="fade-up" data-aos-duration="1500">
+      <h2 class="mb-3">&#127775 Was du bei mir bekommst:</h2>
+      <ul class="list-emoji">
+        <li data-aos="zoom-in" data-aos-duration="1500">
+          <span>&#9989</span><p>Stillvorbereitungskurse für werdende Eltern</p>
+        </li>
+        <li data-aos="zoom-in" data-aos-duration="2000">
+          <span>&#9989</span><p>Persönliche Beratung nach der Geburt</p>
+        </li>
+        <li data-aos="zoom-in" data-aos-duration="2500">
+          <span>&#9989</span><p>
+            Praktische Tipps & Lösungen für Stillprobleme
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Container>
+
+<script>
+  import Swiper, { Pagination, EffectCoverflow } from 'swiper'
+  const swiper = new Swiper('.swiper', {
+    modules: [Pagination, EffectCoverflow],
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  })
+</script>
