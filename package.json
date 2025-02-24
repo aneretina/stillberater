@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
-    "aos": "^2.3.4",
     "astro": "^4.1.1",
     "astro-navbar": "^1.2.3",
     "scroll-lock": "2.1.5",
