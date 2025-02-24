@@ -1,7 +1,12 @@
 .swiper {
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @include vp-1024 {
+        width: 50%;
+    }
 }
 
 .swiper-slide {
