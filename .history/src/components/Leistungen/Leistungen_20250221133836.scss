@@ -71,7 +71,7 @@
     background-color: white;
     padding: 10px;
     border-radius: 8px;
-    width: 90%;
+    width: 80%;
     // max-width: 600px;
     text-align: left;
 
@@ -95,4 +95,24 @@
     right: 10px;
     cursor: pointer;
   }
+}
+
+/* Fade-In-Animation für den gesamten Step */
+.step {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animationen für Step 1 */
+.step1 {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animationen für Step 2 (von rechts) */
+.step2 {
+  animation: slideInRight 1s ease-out;
+}
+
+/* Animationen für Step 3 (von links) */
+.step3 {
+  animation: slideInLeft 1s ease-out;
 }
